@@ -1,0 +1,73 @@
+[
+    {
+        "allCourses": [
+            {
+                "id": "course1",
+                "title": "Introduction to Programming",
+                "category": "Computer Science",
+                "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
+                "description": "Learn the basics of programming with this introductory course.",
+                "price": 99.99
+            },
+            {
+                "id": "course2",
+                "title": "Advanced Web Development",
+                "category": "Web Development",
+                "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
+                "description": "Dive deeper into web development with advanced techniques and frameworks.",
+                "price": 149.99
+            },
+            {
+                "id": "course3",
+                "title": "Data Science Essentials",
+                "category": "Data Science",
+                "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
+                "description": "Start your journey in data science, learn about data manipulation and visualization.",
+                "price": 199.99
+            },
+            {
+                "id": "course4",
+                "title": "Machine Learning with Python",
+                "category": "Machine Learning",
+                "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
+                "description": "Gain a solid foundation in machine learning principles with Python.",
+                "price": 299.99
+            },
+            {
+                "id": "course5",
+                "title": "Full-Stack Development",
+                "category": "Full-Stack",
+                "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
+                "description": "Become a full-stack developer by learning both front-end and back-end technologies.",
+                "price": 349.99
+            },
+            {
+                "id": "course6",
+                "title": "Cybersecurity Fundamentals",
+                "category": "Cybersecurity",
+                "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
+                "description": "Understand the basics of cybersecurity and how to protect digital assets.",
+                "price": 399.99
+            }
+        ]
+    },
+    {
+        "enrolledCourses": [
+            {
+                "courseId": "course1",
+                "enrollmentDate": "2023-01-15",
+                "progress": 20
+            },
+            {
+                "courseId": "course3",
+                "enrollmentDate": "2023-02-05",
+                "progress": 50
+            },
+            {
+                "courseId": "course5",
+                "enrollmentDate": "2023-03-20",
+                "progress": 75
+            }
+        ]
+    }
+]
