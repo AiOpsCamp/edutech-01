@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Dot from '../../assets/svg/Dot';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 const Courses = () => {
     const [data, setData] = useState([]);
-
+    const navigate = useNavigate();
     useEffect(() => {
         fetch('/data.json')
             .then((res) => res.json())
@@ -36,7 +37,7 @@ const Courses = () => {
                                         </p>
                                     </div>
                                     <div className="">
-                                        <button className='flex px-2 py-[6px] border-gray-400 border-[1px] justify-center items-center gap-3'>
+                                        <button onClick={()=>navigate('/fol')} className='flex px-2 py-[6px] border-gray-400 border-[1px] justify-center items-center gap-3'>
                                             <span className='text-xl'>Get started</span>
                                             <span><AiOutlineArrowRight className="text-xl text-blue" /></span>
                                         </button>
