@@ -8,10 +8,14 @@
                 "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
                 "description": "Learn the basics of programming with this introductory course.",
                 "price": 99.99,
+                "level": "Beginner",
                 "details": {
                     "playground": 23,
                     "quizzes": 12,
-                    "videos": 34
+                    "videos": 34,
+                    "length": 120,
+                    "certificate": true,
+                    "illustration": 210
                 }
             },
             {
