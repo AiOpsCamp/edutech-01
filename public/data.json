@@ -7,7 +7,12 @@
                 "category": "Computer Science",
                 "thumbnail": "https://www.educative.io/cdn-cgi/image/format=auto,width=1200,quality=75/v2api/collection/10370001/6346001699569664/image/5979312128524288",
                 "description": "Learn the basics of programming with this introductory course.",
-                "price": 99.99
+                "price": 99.99,
+                "details": {
+                    "playground": 23,
+                    "quizzes": 12,
+                    "videos": 34
+                }
             },
             {
                 "id": "course2",

@@ -37,7 +37,7 @@ const Courses = () => {
                                         </p>
                                     </div>
                                     <div className="">
-                                        <button onClick={()=>navigate('/fol')} className='flex px-2 py-[6px] border-gray-400 border-[1px] justify-center items-center gap-3'>
+                                        <button onClick={() => navigate(`/details/${course.id}`)} className='flex px-2 py-[6px] border-gray-400 border-[1px] justify-center items-center gap-3'>
                                             <span className='text-xl'>Get started</span>
                                             <span><AiOutlineArrowRight className="text-xl text-blue" /></span>
                                         </button>
