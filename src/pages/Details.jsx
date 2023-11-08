@@ -4,6 +4,7 @@ import { BsFillBookmarkFill, BsJournalRichtext } from 'react-icons/bs';
 import { GiNetworkBars } from 'react-icons/gi';
 import { BiStopwatch } from 'react-icons/bi';
 import { PiCertificateDuotone } from 'react-icons/pi';
+import Paragraph from '../tmp/Paragraph';
 
 const Details = () => {
     const { id } = useParams();
@@ -24,9 +25,9 @@ const Details = () => {
     return loading ? <div className="flex justify-center items-center h-screen">
         <h1>Loading...</h1>
     </div> : (
-        <section>
+        <section className='overflow-hidden'>
             <div className="h-[300px] w-full bg-[#121d42] text-[#f9fafb]">
-                <div className="w-[90%] relative py-8  mx-auto">
+                <div className="w-[90%]  py-8  mx-auto">
                     <div className="flex items-center gap-4">
                         <h1>{category}</h1>
                         <div className='border-r border-white h-[20px] '> </div>
@@ -54,11 +55,12 @@ const Details = () => {
                             <span className=" ml-1">Certificate of Completion</span>
                         </div>
                     </div>
-                    <div className="fixed top-[300px] bg-blue w-[250px] h-32 right-0">
-
+                    <div className="fixed top-[70px] bg-blue w-[250px] h-32 right-0">
+                                
                     </div>
                 </div>
             </div>
+            <Paragraph />
         </section>
     );
 };
