@@ -6,40 +6,42 @@ const TakeWaySkills = () => {
     const [isShowMore, setIsShowMore] = useState(false);
     return (
         <>
-            <div className='bg-[#eff6ff] p-4 md:p-8 lg:p-16 h-auto md:h-[250px] px-4 md:px-8 lg:px-16 w-full'>
-                <h1 className='text-2xl font-semibold mb-3'>Takeaway Skills</h1>
-                <div className="grid space-y-2 grid-cols-1 md:grid-cols-2 ">
-                    <div className="">
-                        <span className='flex items-center gap-2'>
-                            <span>
-                                <AiOutlineCheck className='inline-block text-xl text-blue' />
+            <div className='bg-[#eff6ff] p-4 md:p-8 lg:p-16  h-auto md:h-[250px] px-4 md:px-8 lg:px-16 w-full'>
+                <div className="md:w-[80%] ">
+                    <h1 className='text-2xl font-semibold mb-3'>Takeaway Skills</h1>
+                    <div className="grid space-y-2 grid-cols-1 md:grid-cols-2 ">
+                        <div className="">
+                            <span className='flex items-center gap-2'>
+                                <span>
+                                    <AiOutlineCheck className='inline-block text-xl text-blue' />
+                                </span>
+                                <span>Thorough understanding of data structures and algorithms</span>
                             </span>
-                            <span>Thorough understanding of data structures and algorithms</span>
-                        </span>
-                    </div>
-                    <div className="">
-                        <span className='flex items-center gap-2'>
-                            <span>
-                                <AiOutlineCheck className='inline-block text-xl text-blue' />
+                        </div>
+                        <div className="">
+                            <span className='flex items-center gap-2'>
+                                <span>
+                                    <AiOutlineCheck className='inline-block text-xl text-blue' />
+                                </span>
+                                <span>Working knowledge of array-based, linked list-based, and blended implementations</span>
                             </span>
-                            <span>Working knowledge of array-based, linked list-based, and blended implementations</span>
-                        </span>
-                    </div>
-                    <div className="">
-                        <span className='flex items-center gap-2'>
-                            <span>
-                                <AiOutlineCheck className='inline-block text-xl text-blue' />
+                        </div>
+                        <div className="">
+                            <span className='flex items-center gap-2'>
+                                <span>
+                                    <AiOutlineCheck className='inline-block text-xl text-blue' />
+                                </span>
+                                <span>Hands-on experience of Python interfaces, classes, and templates</span>
                             </span>
-                            <span>Hands-on experience of Python interfaces, classes, and templates</span>
-                        </span>
-                    </div>
-                    <div className="">
-                        <span className='flex items-center gap-2'>
-                            <span>
-                                <AiOutlineCheck className='inline-block text-xl text-blue' />
+                        </div>
+                        <div className="">
+                            <span className='flex items-center gap-2'>
+                                <span>
+                                    <AiOutlineCheck className='inline-block text-xl text-blue' />
+                                </span>
+                                <span>Familiarity with complexity analysis of data structures and related algorithms</span>
                             </span>
-                            <span>Familiarity with complexity analysis of data structures and related algorithms</span>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>

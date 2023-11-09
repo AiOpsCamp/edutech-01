@@ -59,7 +59,11 @@ const CourseContent = () => {
             ]
         }
     ]
-    
+    const [isAllOpen, setIsAllOpen] = useState(false);
+    const handleExpandAll = () => {
+        setIsAllOpen((prevIsAllOpen) => !prevIsAllOpen);
+        setOpenIndex(null); // Close individual sections when "Expand All" is clicked
+    };
     const [openIndex, setOpenIndex] = useState(null);
 
     const box = <div className="h-6 w-6 border-[1px] rounded-full"></div>;
@@ -69,7 +73,11 @@ const CourseContent = () => {
             <div className="w-[70%] ">
                 <div className="flex justify-between items-center">
                     <h1 className='text-2xl font-bold'>Course Overview</h1>
-                    <span className='text-2xl font-bold cursor-pointer text-blue'>Expand All Sections</span>
+                    <button
+                        onClick={handleExpandAll}
+                        className='text-2xl font-bold cursor-pointer text-blue'>
+                        {isAllOpen ? 'Collapse All Sections' : 'Expand All Sections'}
+                    </button>
                 </div>
                 <div className="my-7 space-y-3">
                     {data.map((item, index) => (
@@ -97,7 +105,7 @@ const CourseContent = () => {
                                     )}
                                 </div>
                             </div>
-                            {openIndex === index && (
+                            {openIndex === index || isAllOpen ? (
                                 <div className="ml-2 space-y-2">
                                     {item.sub.map(sub => (
                                         <div key={sub.id} className="flex items-center gap-1">
@@ -106,7 +114,7 @@ const CourseContent = () => {
                                         </div>
                                     ))}
                                 </div>
-                            )}
+                            ) : null}
                         </div>
                     ))}
                 </div>
