@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineCheck } from 'react-icons/ai';
+import CourseContent from './CourseContent';
 
 const TakeWaySkills = () => {
     const [isShowMore, setIsShowMore] = useState(false);
@@ -46,15 +47,25 @@ const TakeWaySkills = () => {
                 <div className="">
                     <h1 className='text-2xl font-bold'>Course Overview</h1>
                 </div>
-                <div className="w-[70%]">
+                <div className="w-[70%] mb-9">
                     <p>Data structures and algorithms are essential in computer science since they play a crucial role in efficient information retrieval and processing, dealing with files, storing contacts on phones, social networks and web searches.</p>
 
-                    <p>In this course, you’ll learn about t... <span className='font-bold underline ml-3 cursor-pointer'>Show More</span></p>
-
+                    <p className={`${isShowMore ? 'hidden' : 'block'} mt-4`}>In this course, you’ll learn about t... <span onClick={() => setIsShowMore(!isShowMore)} className='font-bold underline ml-3 cursor-pointer'>Show More</span></p>
+                    {
+                        isShowMore && <div className="">
+                            <p className='mt-4'>In this course, you’ll learn about the array-based implementation of various linear data structures, stack, and queues. You’ll also learn about linked list-based implementation. Next, you’ll explore advanced data structures like skiplists and hashing. You’ll learn how to implement a variety of trees and graphs, and data structures related to bits of an integer. Toward the end of the course, you’ll learn the implementation of structures based on external storage.
+                            </p>
+                            <p className='mt-4'>
+                                After completing this course, you’ll be able to create reusable programs with template-based collections that can efficiently analyze how to optimize the storage and retrieval of very large amounts of data. Overall, this course will enhance your productivity and performance as a software developer.
+                                <span onClick={() => setIsShowMore(!isShowMore)} className='font-bold underline ml-3 cursor-pointer'>Show Less</span>
+                            </p>
+                        </div>
+                    }
 
 
                 </div>
             </div>
+            <CourseContent />
         </>
     );
 };
